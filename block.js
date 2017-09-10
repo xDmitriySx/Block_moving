@@ -25,8 +25,7 @@ foo(block);
 
 let t=document.querySelector(`#triangle`);
 
-foo(t)
-
+foo(t)// my commit
 
 
 
