@@ -1,4 +1,36 @@
 const block = document.querySelector('#block')
+
+function foo(a){
+function begin(event){
+	
+	a.setAttribute(`onselectstart`,`return false`);
+	a.style.position=`absolute`;
+	a.style.zIndex = 1000;// эта строчка нужна, что б див показывался над всеми остальными элемнетами
+	a.style.backgroundColor=`green`;
+	document.addEventListener(`mousemove`,midel)
+
+
+};a.addEventListener(`mousedown`,begin);
+function midel(event){a.style.left=event.pageX-a.offsetWidth/2+`px`;
+a.style.top=event.pageY-a.offsetHeight/2+`px`
+};
+
+
+
+function end(event){a.style.backgroundColor=``;
+	document.removeEventListener(`mousemove`,midel);
+};
+a.addEventListener(`mouseup`,end);}
+foo(block);
+
+let t=document.querySelector(`#triangle`);
+
+foo(t)
+
+
+
+
+/*const block = document.querySelector('#block')
 function start(event) {
 document.addEventListener('mousemove', posit)};
 
@@ -14,9 +46,9 @@ document.removeEventListener('mousemove', posit)
 };
 
 block.addEventListener('mouseup', end);
+*/
 
-
-
+/*
 
 
 
@@ -36,4 +68,4 @@ document.removeEventListener('mousemove', posit1)
 };
 
 cilinder.addEventListener('mouseup', end1);
-
+*/
