@@ -7,7 +7,7 @@ function begin(event){
 	a.setAttribute(`onselectstart`,`return false`);
 	a.style.position=`absolute`;
 	a.style.zIndex = 1000;// эта строчка нужна, что б див показывался над всеми остальными элемнетами
-	a.style.backgroundColor=`green`;
+	
 	document.addEventListener(`mousemove`,midel)
 
 
