@@ -1,5 +1,5 @@
 //tut budet comit
-const block = document.querySelector('#block')
+ 
 
 function foo(a){
 function begin(event){
@@ -22,11 +22,13 @@ function end(event){a.style.backgroundColor=``;
 	document.removeEventListener(`mousemove`,midel);
 };
 a.addEventListener(`mouseup`,end);}
-foo(block);
+foo(document.querySelector('#block'));
 
-let t=document.querySelector(`#triangle`);
 
-foo(t) /*это для полета других фигур*/
+
+foo(document.querySelector(`#triangle`)); /*это для полета других фигур*/
+
+foo(document.querySelector(`#cilinder`));
 
 
 /*const block = document.querySelector('#block')
