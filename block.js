@@ -28,8 +28,6 @@ let t=document.querySelector(`#triangle`);
 foo(t) /*это для полета других фигур*/
 
 
-
-
 /*const block = document.querySelector('#block')
 function start(event) {
 document.addEventListener('mousemove', posit)};
