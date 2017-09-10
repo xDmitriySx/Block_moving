@@ -25,7 +25,7 @@ foo(block);
 
 let t=document.querySelector(`#triangle`);
 
-foo(t)
+foo(t) /*это для полета других фигур*/
 
 
 
